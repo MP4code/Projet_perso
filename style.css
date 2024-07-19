@@ -1,0 +1,164 @@
+:root{
+--text: #A66D45;
+--background: #F5F2EE;
+--primary: #F3EAD6;
+--secondary: #F6B6A7;
+--accent: #FD9584;
+
+}
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  .shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  */
+*{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+a{
+    text-decoration: none;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--background);
+
+}
+h1{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+}
+/*Navigation*/
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 15% 0 10%;
+    box-sizing: border-box;
+   
+}
+.navBar_link{
+    display: flex ;
+    font-size: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    font-style: bold;
+}
+.navBar a{
+    color: var(--text);
+    
+}
+.navBar a:hover{
+    text-decoration: none;
+    color: var(--accent);
+    transition: 0.5s;
+    
+}
+/*bannière*/
+.bannerContainer img{
+    width: 100px;
+    border-radius: 50px;
+    border: 5px solid var(--primary);
+    position: absolute;
+    left: 20%;
+}
+#bannerTitle{
+    position: absolute;
+    color: var(--accent);
+    font-family: "Shadows Into Light", cursive;
+    font-size: 4em;
+    left: 27%;
+    top: 3%;
+    
+}
+.banner{
+ width: 100%;
+}
+.bannerContainer{
+    display: flex;
+    padding: 2%;
+}
+
+.bannerContent{
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 15px;
+    margin-top: 2%;
+    margin-left: 150px;
+    padding-left: 100px;
+    width: 50%;
+    border-radius: 30px ;
+}
+
+/**/
+.sendMe{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    margin-right: 20%;
+
+}
+.rond{
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--accent);
+    animation-name: colorRond;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.opacityRond{
+    opacity: 0.3;
+}
+.opacityRond1{
+    opacity: 0.6;
+}
+/*
+@keyframes colorRond {
+   from {
+        background-color: var(--accent);
+        
+    }
+  
+    100% {
+        background-color: var(--secondary);
+        opacity: 0.5;
+    }
+  }
+
+*/
+
+.sendMe_btn{
+    margin-left: 10px;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sendMe_btn:hover{
+    background-color: var(--primary);
+    color: var(--accent);
+    transition: 0.6s;
+}
